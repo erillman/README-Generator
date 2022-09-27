@@ -3,14 +3,14 @@ from random import randint
 
 
 def main():
-    save_path = 'C:\\Users\Eric\Desktop\Learning Python\Text Files\README.md'
+    save_path = '____enter directory path here____\README.md'
     bool_return = find_duplicate(save_path)
     if bool_return == True:
         new_name = ''
         _ = create_alphabet_list()
         for i in range(6):
             new_name += _[randint(0, 26)]
-        new_path = f'C:\\Users\Eric\Desktop\Learning Python\Text Files\{new_name}.md'
+        new_path = f'____enter directory path here____\{new_name}.md'
         os.rename(save_path, new_name)
         create_new_file(save_path)
     else:
